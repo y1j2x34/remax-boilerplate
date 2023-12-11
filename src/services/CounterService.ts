@@ -10,6 +10,7 @@ export class CounterService {
     increment() {
         this.counter++
     }
+    @action
     decrement() {
         this.counter--
     }

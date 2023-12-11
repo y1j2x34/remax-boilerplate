@@ -1,6 +1,7 @@
 const pages = [
   'pages/index/index',
-  'pages/my/index'
+  'pages/my/index',
+  "pages/icons/index"
 ];
 const color = '#282c34';
 

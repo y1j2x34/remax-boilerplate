@@ -1,9 +1,11 @@
 import * as React from 'react';
-import { View, Text, Image } from 'remax/one';
+import { View, Image } from 'remax/one';
 import styles from './index.css';
 import { useService } from '@vgerbot/use-service-react';
 import { CounterService } from '@/services/CounterService';
 import { Observer } from 'mobx-react';
+import { Button, Icon } from '@kqinfo/ui';
+import { IconFont } from '@/components/icon-font';
 
 export default () => {
   const service = useService(CounterService);
@@ -14,12 +16,14 @@ export default () => {
           src="https://gw.alipayobjects.com/mdn/rms_b5fcc5/afts/img/A*OGyZSI087zkAAAAAAAAAAABkARQnAQ"
           className={styles.logo}
         />
-        <View onTap={() => service.increment()}>
+        <Button type="primary" onTap={() => service.increment()}>
+          <Icon name="kq-xiangji"></Icon>
           点我增加计数
-        </View>
-        <View onTap={() => service.decrement()}>
+        </Button>
+        <Button type="attract" onTap={() => service.decrement()}>
+          <IconFont type="minus"></IconFont>
           点我减少计数
-        </View>
+        </Button>
         <View className={styles.Text}>
           <Observer>{
             () => {
