@@ -1,16 +1,14 @@
-import { Observable } from '@vgerbot/use-service-react';
-import { action, observable } from 'mobx';
+import { Atom } from '@/hooks/useService';
 
-@Observable()
 export class CounterService {
-    @observable
+
+    @Atom
     counter = 0;
 
-    @action
     increment() {
         this.counter++
     }
-    @action
+
     decrement() {
         this.counter--
     }

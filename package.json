@@ -13,13 +13,13 @@
   },
   "dependencies": {
     "@kqinfo/ui": "^1.16.47",
-    "@vgerbot/ioc": "^1.0.0-alpha.1",
-    "@vgerbot/use-service-react": "^1.0.4",
-    "mobx": "^6.12.0",
-    "mobx-react": "^9.1.0",
+    "@vgerbot/ioc": "^1.0.0-alpha.2",
+    "ahooks": "^3.7.8",
+    "jotai": "^2.6.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "remax": "^2.9.1",
+    "react-query": "^3.39.3",
+    "remax": "^2.15.14",
     "remax-iconfont-component": "^1.0.2"
   },
   "devDependencies": {
@@ -32,11 +32,11 @@
     "typescript": "^4.1.2"
   },
   "resolutions": {
-    "mobx": "^6.12.0",
-    "mobx-react": "^9.0.1"
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
   },
   "overrides": {
-    "mobx": "^6.12.0",
-    "mobx-react": "^9.0.1"
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
   }
 }

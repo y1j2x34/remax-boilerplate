@@ -1,9 +1,8 @@
 import * as React from 'react';
-import { View, Text, Image } from 'remax/one';
+import { View, Image } from 'remax/one';
 import styles from './index.css';
-import { useService } from '@vgerbot/use-service-react';
 import { CounterService } from '@/services/CounterService';
-import { Observer } from 'mobx-react';
+import { useService } from '@/hooks/useService';
 
 export default () => {
   const service = useService(CounterService);
@@ -21,11 +20,7 @@ export default () => {
           点我减少计数
         </View>
         <View className={styles.Text}>
-          <Observer>{
-            () => {
-              return <>{service.counter}</>
-            }
-          }</Observer>
+          {service.counter}
         </View>
       </View>
     </View>

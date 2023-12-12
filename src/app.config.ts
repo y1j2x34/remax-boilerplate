@@ -16,6 +16,23 @@ export const wechat: WechatAppConfig = {
     navigationBarBackgroundColor: color,
     navigationBarTitleText: 'Remax One Wechat',
   },
+  tabBar: {
+    color: '#000',
+    selectedColor: '#F00',
+    backgroundColor: '#DDD',
+    position: 'bottom',
+    list: [{
+      text: 'Home',
+      pagePath: 'pages/index/index',
+      iconPath: 'assets/tab_bar/home.png'
+    }, {
+      text: 'Icons',
+      pagePath: 'pages/icons/index'
+    }, {
+      text: 'My',
+      pagePath: 'pages/my/index'
+    }]
+  }
 };
 
 export const ali: AliAppConfig = {
