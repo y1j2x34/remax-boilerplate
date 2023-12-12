@@ -3,7 +3,7 @@ const pages = [
   'pages/my/index',
   "pages/icons/index"
 ];
-const color = '#282c34';
+const navigationBarBackgroundColor = '#FFF';
 
 import { AppConfig as WechatAppConfig } from 'remax/wechat';
 import { AppConfig as AliAppConfig } from 'remax/ali';
@@ -13,13 +13,14 @@ import { AppConfig as WebAppConfig } from 'remax/web';
 export const wechat: WechatAppConfig = {
   pages,
   window: {
-    navigationBarBackgroundColor: color,
+    navigationBarBackgroundColor: navigationBarBackgroundColor,
+    navigationBarTextStyle: 'black',
     navigationBarTitleText: 'Remax One Wechat',
   },
   tabBar: {
-    color: '#000',
-    selectedColor: '#F00',
-    backgroundColor: '#DDD',
+    color: '#bebebe',
+    selectedColor: '#2780d9',
+    backgroundColor: '#FFF',
     position: 'bottom',
     list: [{
       text: 'Home',
@@ -39,7 +40,7 @@ export const ali: AliAppConfig = {
   pages,
   window: {
     defaultTitle: 'Remax One Ali',
-    titleBarColor: color,
+    titleBarColor: navigationBarBackgroundColor,
   },
   tabBar: {
     items:[{
@@ -58,7 +59,7 @@ export const toutiao: ToutiaoAppConfig = {
   pages,
   window: {
     navigationBarTitleText: 'Remax One Toutiao',
-    navigationBarBackgroundColor: color,
+    navigationBarBackgroundColor: navigationBarBackgroundColor,
   },
 };
 
